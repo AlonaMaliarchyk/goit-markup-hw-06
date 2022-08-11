@@ -871,9 +871,12 @@ textarea {
     color: #757575;
 }
 
-.form-field:hover input {
-    border: var(--accent-color);
+.form-field input:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
 }
+
+
 
 .class-label {
     margin-bottom: 5px;
@@ -884,6 +887,12 @@ textarea {
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    padding: ;
+
+}
+
+.class-input:focus~svg {
+    fill: var(--accent-color);
 }
 
 .input-wrap {
@@ -893,6 +902,7 @@ textarea {
 
 .input-icon {
     position: absolute;
+    fill: #212121;
     left: 8px;
     top: 50%;
     transform: translateY(-50%);
@@ -922,8 +932,6 @@ textarea {
     border: 1px solid transparent;
     margin-left: auto;
     margin-right: auto;
-
-
     text-align: center;
     letter-spacing: 0.06em;
 }
