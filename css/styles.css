@@ -871,6 +871,10 @@ textarea {
     color: #757575;
 }
 
+.form-field:hover input {
+    border: var(--accent-color);
+}
+
 .class-label {
     margin-bottom: 5px;
 }
@@ -880,8 +884,18 @@ textarea {
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin: 0;
-    padding: 6px 10px;
+}
+
+.input-wrap {
+    position: relative;
+
+}
+
+.input-icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .policy {
